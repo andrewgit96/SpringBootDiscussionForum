@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org"
+xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+<title> Admin: Add Thread</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css" th:href="@{/css/styles.css}">
+</head>
+<body>
+<h1>Admin Page</h1>
+<div class="admin">
+<div th:fragment="logout" class="logout"
+sec:authorize="isAuthenticated()">
+User Name: <span sec:authentication="name"></span> <br>
+Roles: <span sec:authentication="principal.authorities"></span>
+<br> <br>
+<div>
+</div>
+</div>
+<h4><a th:href="@{/home}">View all Threads</a></h4>
+<br>
+<hr>
+<h2> Add a Thread</h2>
+<form th:action="@{/addThread}" method="post" th:object="${thread}">
+Thread Name <input type="text" name="threadName" > <br>
+<input type="hidden" name="employee" th:value="${#authentication.getPrincipal().getUsername()}"><br>
+<input type="submit" value="Add Thread">
+</form>
+</div>
+
+
+</body>
+</html>

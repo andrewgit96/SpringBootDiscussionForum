@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" type="text/css" href="css/styles.css" th:href="@{/css/styles.css}">
+
+<title>Company Forum</title>
+</head>
+<body>
+<h1> Welcome to the Company Discussion Forum</h1>
+<div class="welcome">
+<h2><a th:href="@{/home}">Employee Discussion Home (must be in USER or MANAGER role to access
+this page)</a></h2>
+
+<h2><a th:href="@{/register}">New employee? Click here for the User Registration Page (register new employee
+account)</a></h2>
+
+</div>
+
+<footer> Andrew Pereira Enterprises &copy; 2020</footer>
+</body>
+</html>

@@ -1,0 +1,46 @@
+@charset "ISO-8859-1";
+
+
+body {
+	background-color:#F0FFFF
+}
+
+.container{
+	background-color:#FAEBD7;
+}
+
+.welcome{
+	padding: 5px;
+    padding-left:  15px;
+    padding-right: 15px;
+    background-color: #ffffff;
+    border-radius: 0 0 5px 5px;
+}
+
+.message{
+	background-color:#FAEBD7;
+}
+
+.loginPage{
+	background-color: lightgrey;
+  width: 300px;
+  border: 15px solid black;
+  padding: 50px;
+  margin: 20px;
+}
+
+.register{
+	background-color: lightgrey;
+  width: 300px;
+  border: 15px solid black;
+  padding: 50px;
+  margin: 20px;
+}
+
+.admin{
+	background-color: lightgrey;
+  width: 300px;
+  border: 15px solid black;
+  padding: 50px;
+  margin: 20px;
+}
